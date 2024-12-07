@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Montserrat, sans-serif;
     background: #a1ad8b;
@@ -72,4 +78,64 @@ body{
 
 .container a i:hover{
     color: #556b2f;
+}
+
+.buy {
+    background: #556b2f;
+    border: 1px solid #a1ad8b;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    margin: 0 25px 0px 25px;
+    padding: 8px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14px;
+    padding: 15px 20px;
+    border: 1px solid #556b2f;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 0 25px 0 25px;
+    transition: background 0.2s;
+}
+
+ul li a:hover{
+    background: rgba(85, 107, 47, 0.5);
+    border: 1px solid rgba(85, 107, 47, 0.5);
+}
+
+footer {
+    padding: 15px;
+}
+
+footer a{
+    padding: 2px 3px 2px 3px;
+    margin: 0 115px;
+    text-align: center;
+    border-radius:9px;
+    font-size: 6px;
+    border: 1px solid rgba(85, 107, 47, 0.3);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+footer a:hover{
+    background: rgba(85, 107, 47, 0.5);
+    border: 1px solid rgba(85, 107, 47, 0.5);
 }
